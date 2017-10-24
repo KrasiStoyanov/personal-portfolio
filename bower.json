@@ -1,0 +1,20 @@
+{
+  "name": "Krasi Stoyanov Portfolio",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Hactex"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery-viewport-checker": "^1.8.7"
+  }
+}
