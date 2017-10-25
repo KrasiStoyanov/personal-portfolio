@@ -2,146 +2,36 @@
 	"projects": [
 		{
 			"id": 0,
-			"title": "Designer Portfolio",
-			"description": "The concpet design of our newest designer portfolio theme. It's aim is to represent a designer's portflio in the most attractive and creative way, by adding some ornaments and odd shapes and by using clean separations and perfectly fitting color scheme.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/designer-theme/main-image.png",
-			"images": ["images/portfolio/designer-theme/home.png"],
-			"tags": ["Web Design", "UI Design", "Mobile Design"],
-			"mainTag": "Web Design"
+			"url": "#",
+			"title": "Krasi Stoyanov",
+			"date": "19 October, 2017",
+			"imageSrc": "./images/krasi-stoyanov.jpg",
+			"category": "2",
+			"height-desktop": 6,
+			"height-mobile": 12,
+			"col-md": 6
 		},
 		{
 			"id": 1,
-			"title": "Web Developer Portfolio",
-			"description": "The concept design of a new portfolio theme, which's main targets are developers.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/web-developer-theme/main-image.png",
-			"images": ["images/portfolio/web-developer-theme/home.png", "images/portfolio/web-developer-theme/about.png", "images/portfolio/web-developer-theme/works.png"],
-			"tags": ["Web Design", "UI Design", "Mobile Design"],
-			"mainTag": "Web Design"
+			"url": "#",
+			"title": "Lonely bench",
+			"date": "15 September, 2017",
+			"imageSrc": "./images/lonely-bench.jpg",
+			"category": "6",
+			"height-desktop": 3,
+			"height-mobile": 7,
+			"col-md": 6
 		},
 		{
 			"id": 2,
-			"title": "BookWorm",
-			"description": "A concept project which aims to attract readers, writers and critiques of literature. This is a social media for all those people where you can read, write and like literature works. The app works like a game: each day it gives you a task, i.e. last sentance of a book chapter, which you have to write. After you complete your daily task, you can review others' daily tasks and see how they have completed the task. In the app you can write all sorts of literature works, i.e. poems, books, short stories, long stories, etc.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/bookworm/main-image.png",
-			"images": ["images/portfolio/bookworm/home.png", "images/portfolio/bookworm/work-book.png", "images/portfolio/bookworm/work-poem.png", "images/portfolio/bookworm/work-no-image.png", "images/portfolio/bookworm/profile.png", "images/portfolio/bookworm/modal-privacy.png", "images/portfolio/bookworm/modal-settings.png", "images/portfolio/bookworm/modal-image.png", "images/portfolio/bookworm/notifications.png"],
-			"tags": ["Web Design", "UI Design"],
-			"mainTag": "Web Design"
-		},
-		{
-			"id": 3,
-			"title": "100 Days UI Challenge",
-			"description": "This project is made by Paul Flavius Nechita. The challenge consists of everyday creation of UI elements for 100 days (a design each day). This is our small try for the project, which will probably escalate for a time.",
-			"technologies": ["Adobe Photoshop", "Adobe Illustrator"],
-			"website": "https://goo.gl/BrjNRm",
-			"mainImage": "images/portfolio/100-days-ui-challenge/main-image.png",
-			"images": ["images/portfolio/100-days-ui-challenge/day-01.png", "images/portfolio/100-days-ui-challenge/day-02.png", "images/portfolio/100-days-ui-challenge/day-03.png"],
-			"tags": ["UI Design", "Mobile Design", "Web Design"],
-			"mainTag": "UI Design"
-		},
-		{
-			"id": 4,
-			"title": "UI Design",
-			"description": "A non-profit works, which have been made by inspiration by different kinds of apps and designs.",
-			"technologies": ["Adobe Photoshop", "Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/ui-design/main-image.jpg",
-			"images": ["images/portfolio/ui-design/music-player.jpg", "images/portfolio/ui-design/profile-page.png", "images/portfolio/ui-design/profile-card.jpg"],
-			"tags": ["UI Design", "Mobile Design"],
-			"mainTag": "UI Design"
-		},
-		{
-			"id": 5,
-			"title": "Songly",
-			"description": "Songly is a concept online music app, which provides all the needed features to a person, who just wants to relax and enjoy the perfect song. The design aims to be as compact as possible, so as to be more easy to use and understand.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/songly/main-image.png",
-			"images": ["images/portfolio/songly/home.png", "images/portfolio/songly/home-expanded.png", "images/portfolio/songly/artist.png", "images/portfolio/songly/genres.png", "images/portfolio/songly/sign-up.png", "images/portfolio/songly/sign-in.png"],
-			"tags": ["UI Design", "Web Design"],
-			"mainTag": "Web Design"
-		},
-		{
-			"id": 6,
-			"title": "Postcards",
-			"description": "Vector graphics - postcards for birthdays and namedays.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/postcards/main-image.png",
-			"images": ["images/portfolio/postcards/birthday.png", "images/portfolio/postcards/name-day.png"],
-			"tags": ["UI Design", "Branding And Identity"],
-			"mainTag": "Branding And Identity"
-		},
-		{
-			"id": 7,
-			"title": "Illustrations",
-			"description": "Vector graphics - some illustrations: Winnie the Pooh, a dog, cartoon character, fish, shark.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/art-and-illustration/main-image.png",
-			"images": ["images/portfolio/art-and-illustration/01.png", "images/portfolio/art-and-illustration/02.png", "images/portfolio/art-and-illustration/03.png", "images/portfolio/art-and-illustration/04.png", "images/portfolio/art-and-illustration/05.png", "images/portfolio/art-and-illustration/06.png"],
-			"tags": ["UI Design", "Branding And Identity"],
-			"mainTag": "Art And Illustration"
-		},
-		{
-			"id": 8,
-			"title": "Telerik Academy Redesign",
-			"description": "This one is special. It is dedicated to one of the best software companies - Telerik (now owned by Progress), more concrete to Telerik Academy, located in Sofia, Bulgaria. The academy is an educational center for becoming an IT expert for free. It has no age limits and is open for everything new. Here we present you our version of a redesign for the academy's website, which is not in the latest and modern standarts, but aims to smoothen and modernize its current look, which can be seen in the link bellow. Unfortunatelly this remains a concept redesign of Telerik Academy.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "http://telerikacademy.com/",
-			"mainImage": "images/portfolio/telerik-academy-redesign/main-image.png",
-			"images": ["images/portfolio/telerik-academy-redesign/home.png", "images/portfolio/telerik-academy-redesign/home-expanded.png", "images/portfolio/telerik-academy-redesign/login.png", "images/portfolio/telerik-academy-redesign/profile.png", "images/portfolio/telerik-academy-redesign/course-details.png", "images/portfolio/telerik-academy-redesign/calendar.png"],
-			"tags": ["Web Design", "UI Design", "Redesign"],
-			"mainTag": "Web Design"
-		},
-		{
-			"id": 9,
-			"title": "BookIT",
-			"description": "A concept design for an unfinished project called BookIT. This mobile app is a calendar, more precise - a task manager for work, combined with your daily life. This app's targets are employed people, who have to schedule their meetings with people, who will work with, i.e. a dentist has a patient at 3am. This scheduler is public to all the clients, so they can see which day the person has a free hour, or two, which he can book to see him/her.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/book-it/main-image.png",
-			"images": ["images/portfolio/book-it/daily-view.png", "images/portfolio/book-it/monthly-view.png"],
-			"tags": ["Mobile Design", "UI Design"],
-			"mainTag": "UI Design"
-		},
-		{
-			"id": 10,
-			"title": "Campaign Poster",
-			"description": "This project is a campaign poster for drivers, who should be concentrated behind the wheel so as to avoid car accidents. Here we represent you the process of work, which could be seen in this 3 different images. They are ordered in a way that the last one is the final poster design.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/nasko-campaign/main-image.png",
-			"images": ["images/portfolio/nasko-campaign/campaign.png", "images/portfolio/nasko-campaign/campaign-1.png", "images/portfolio/nasko-campaign/campaign-2.png"],
-			"tags": ["Branding And Identity", "UI Design"],
-			"mainTag": "Branding And Identity"
-		},
-		{
-			"id": 11,
-			"title": "TeamPRO",
-			"description": "TeamPRO is an organisation which empowers students to extend their knowledge in the sphere of programing, so as to aquire the needed skills to begin a meaningful project. The task is to create and develop a project of the team's choice, while attending non-professional lectures for web development. Here we represent part of our participance in this organistaion.",
-			"technologies": ["Adobe Illustrator"],
-			"website": "",
-			"mainImage": "images/portfolio/team-pro/main-image.png",
-			"images": ["images/portfolio/team-pro/logo.png", "images/portfolio/team-pro/poster.png"],
-			"tags": ["Branding And Identity", "UI Design"],
-			"mainTag": "Branding And Identity"
-		},
-		{
-			"id": 12,
-			"title": "Space Cara",
-			"description": "This here is our designer's digital art of Cara Delevingne fantasized in a space suit, in the middle of an apocalyptic battle. The profit for the sketch used in the art goes to Andrew Doma, who has variants of drawings of her.",
-			"technologies": ["Adobe Photoshop"],
-			"website": "https://www.artstation.com/artwork/0dwKK",
-			"mainImage": "images/portfolio/space-cara/main-image.png",
-			"images": ["images/portfolio/space-cara/sketch.jpg", "images/portfolio/space-cara/space-cara.png"],
-			"tags": ["Art And Illustration", "Drawing"],
-			"mainTag": "Art And Illustration"
+			"url": "#",
+			"title": "The beauty of The Netherlands",
+			"date": "15 September, 2017",
+			"imageSrc": "./images/the-beauty-of-the-netherlands.jpg",
+			"category": "6",
+			"height-desktop": 3,
+			"height-mobile": 7,
+			"col-md": 6
 		}
 	]
 }

@@ -1,0 +1,106 @@
+.card {
+	position: relative;
+	border: 0;
+	border-radius: 0;
+	overflow: hidden;
+
+	&:hover {
+		.cover-image {
+			transform: scale(1.11);			
+		}
+
+		.overlay {
+			opacity: .55;
+		}
+
+		.arrow {
+			.next-arrow {
+				opacity: 1;
+
+				line {
+					opacity: 1;
+					animation: rightArrowLineStart 0.5s cubic-bezier(0.05, 0.2, 0.1, 1) .1s forwards;
+					stroke-dashoffset: 30px;
+					stroke: $white;
+				}
+			}
+
+			.line {
+	    		animation: portRightLineStart 0.4s cubic-bezier(0.05, 0.15, 0.1, 1) forwards;
+				opacity: 1;
+				transform-origin: left;
+				transform: translateX(0px) scaleX(1);
+			}
+		}
+	}
+
+	.cover-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-size: cover;
+		background-position: center center;
+		@include transition(transform .6s cubic-bezier(.05, .2, .1, 1));
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $black;
+		opacity: 0;
+		@include transition(opacity .6s cubic-bezier(.05, .2, .1, 1));
+	}
+
+	.wrapper {
+		flex: 1;
+	}
+
+	.content {
+		position: relative;
+		flex-grow: 1;
+
+		.title {
+			margin-top: 5px;
+		}
+	}
+
+	.arrow {
+		position: relative;
+	    padding-bottom: 10px;
+
+		.next-arrow,
+		.line {
+			opacity: 0;
+			@include transition(all .2s ease);
+		}
+		
+		.next-arrow {
+			width: 9px;
+		    display: block;
+		    position: absolute;
+		    right: 0;
+		    bottom: 3px;
+
+		    line {
+				stroke-width: 1.5px;
+				stroke-dasharray: 10px;
+			    stroke-dashoffset: 30px;
+			    color: $white;
+		    }
+		}
+
+		.line {
+		    content: '';
+	        height: 2px;
+		    width: 45px;
+		    background-color: #fff;
+		    display: block;
+		    backface-visibility: hidden;
+		}
+	}
+}

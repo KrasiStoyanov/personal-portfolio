@@ -1,0 +1,9 @@
+.filter-controls {
+	margin-bottom: 35px;
+
+	.nav-link {
+		&.active {
+			color: $primary;
+		}
+	}
+}

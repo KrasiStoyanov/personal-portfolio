@@ -5,6 +5,7 @@ var grid = (function () {
 	var resizeCell = function (el, height, rowWidth, gutter) {
 		var percentageHeight = ONE_COL_SIZE * height;
 		var finalHeight = (percentageHeight * rowWidth) / 100;
+		finalHeight = Math.floor(finalHeight);
 		
 		el.outerHeight(finalHeight - GUTTER);
 	}
