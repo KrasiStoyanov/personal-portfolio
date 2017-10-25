@@ -1,46 +1,30 @@
-<nav id="navigation-bar" class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="#">
-		<?xml version="1.0" encoding="utf-8"?>
-		<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
-			<style type="text/css">
-				.st0{fill:#1F1A17;}
-			</style>
-			<g id="logo">
-				<path class="st0" d="M13.2,19.7v50.7c0,12.8,10.3,19.7,20,19.7h2.6V0h-2.6C23.5,0,13.2,6.9,13.2,19.7z M30.6,84.6
-					c-6.4-1-12.2-5.9-12.2-14.3V19.7c0-8.4,5.8-13.3,12.2-14.3C30.6,5.4,30.6,84.6,30.6,84.6z"/>
-				<path class="st0" d="M59.3,41.6c1.8-1.8,3.7-4,5.5-6.1l1.3-1.5c6.4-7,10.6-11.9,10.6-15.9v-2.8c0-9.1-5.9-14-6.2-14.2L69.1,0
-					c0,0-5.7,5.6-8.1,7.9c-6.7,6.2-15.1,14-15.1,20.6v10.3l5.2-5.2v-5.1c0-4.3,8.4-12.1,13.5-16.8c2-1.8,3.5-3.3,4.7-4.4
-					c1.2,1.7,2.5,4.4,2.5,8.2v2.8c0,2.3-6,8.9-9.3,12.4L61,32.1c-1.8,1.9-3.6,3.7-5.3,5.4c-5.3,5.1-9.9,9.6-9.9,15.8v8.2
-					c0,9,18,24.2,21.6,27.2L69,90l1.6-1.4c0.3-0.2,6.1-5.2,6.1-14.1c0-2.2,0-6.7-2.4-10.2c-2.5-3.5-6.2-7-9.7-10.4
-					c-1.3-1.2-2.6-2.5-3.8-3.7l-3.7,3.7c1.3,1.3,2.6,2.5,3.9,3.8c3.4,3.2,6.9,6.6,9.1,9.6c1.5,2.1,1.5,5.4,1.5,7.2c0,4-1.6,6.9-2.9,8.6
-					C60.8,76.2,51,65.9,51,61.5v-8.2C51,49.2,54.6,46.1,59.3,41.6z"/>
-			</g>
-		</svg>
+<nav id="navigation-bar" class="navbar navbar-expand-sm navbar-light bg-light">
+	<div class="container pl-md-0 pr-md-0">
+		<a class="navbar-brand" href="#">
+			{{> logo}}
+		</a>
+		<button class="navbar-toggler align-self-end" type="button" data-toggle="collapse" data-target="#navigation-bar-content" aria-controls="navigation-bar-content" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar-content" aria-controls="navigation-bar-content" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse justify-content-end" id="navigation-bar-content">
-		<ul class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Works</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="icon-grid"></i></a>
-			</li>
-		</ul>
+		<div class="collapse navbar-collapse justify-content-end" id="navigation-bar-content">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item ml-6">
+					<a class="nav-link" href="#">Works</a>
+				</li>
+				<li class="nav-item ml-6">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item ml-6">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<li class="nav-item ml-6">
+					<a class="nav-link icon" href="#"><i class="icon-grid"></i></a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </nav>

@@ -10,11 +10,69 @@
 		path {
 			transition: $transition-base;
 		}
+	}
 
-		&:hover {
+
+	&:hover {
+		svg {
 			path {
 				fill: $primary;
 			}
+		}
+	}
+}
+
+.navbar-light {
+	.navbar-nav {
+		.nav-link:not(.icon) {
+	    	position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				right: 0;
+				bottom: 5px;
+				left: 0;
+				height: 2px;
+				background-color: $primary;
+				transform: scaleX(0);
+				@include transition(transform .3s ease-out);
+			}
+
+			&:hover,
+			&:active,
+			&:focus {
+	    		&:after {
+	    			transform: scaleX(1);
+	    		}
+			}
+		}
+
+		.show > .nav-link,
+	    .active > .nav-link,
+	    .nav-link.show,
+	    .nav-link.active {
+	    	&:after {
+    			transform: scaleX(1);
+    		}
+	    }
+	}
+}
+
+.navbar-expand {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		$next: breakpoint-next($breakpoint, $grid-breakpoints);
+		$infix: breakpoint-infix($next, $grid-breakpoints);
+
+    	&#{$infix} {
+			@include media-breakpoint-up($next) {
+ 				.navbar-nav {
+					.nav-link {
+						padding-right: 0;
+						padding-left: 0;
+					}
+				}
+    		}
 		}
 	}
 }

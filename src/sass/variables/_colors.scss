@@ -8,6 +8,15 @@ $blue:           $ink;
 
 $primary:        $blue;
 $secondary:      $gray;
+$light:          $white;
 $dark:           $matte-black;
+
+$colors: (
+	"black":     $black
+);
+
+$theme-colors: (
+	"light":     $light
+);
 
 $body-color:     $gray;
