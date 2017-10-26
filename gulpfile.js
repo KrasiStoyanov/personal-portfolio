@@ -88,11 +88,12 @@
 
     gulp.task('js', function() {
         return gulp.src([
-            'src/js/plugins/popper.min.js',
+            'src/js/plugins/*.js',
             'node_modules/filterizr/dist/jquery.filterizr.min.js',
             'node_modules/mixitup/dist/mixitup.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
-            'src/js/**/*.js'
+            'src/js/modules/*.js',
+            'src/js/main.js'
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('combined.min.js'))

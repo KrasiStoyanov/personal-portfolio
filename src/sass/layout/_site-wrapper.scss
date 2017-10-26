@@ -1,0 +1,17 @@
+#site-wrapper {
+	position: relative;
+	z-index: 1;
+
+	#works-bar-overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $black;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 1;
+		cursor: pointer;
+	}
+}

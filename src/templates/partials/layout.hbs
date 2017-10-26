@@ -11,14 +11,19 @@
 </head>
 
 <body>
-    {{> navigation-bar}}
+    {{> works-bar}}
 
-    <div id="site">
-        {{#block "body"}}
-        {{/block}}
+    <div id="site-wrapper" class="bg-light">
+        <div id="works-bar-overlay"></div>
+        {{> navigation-bar}}
+
+        <div id="site">
+            {{#block "body"}}
+            {{/block}}
+        </div>
+
+        {{> footer}}
     </div>
-
-    {{> footer}}
 
     <script src="//code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 

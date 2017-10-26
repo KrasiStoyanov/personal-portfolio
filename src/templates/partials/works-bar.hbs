@@ -1,0 +1,21 @@
+<div id="works-bar">
+	<div class="content">
+		<div class="container flex-column">
+			<div class="row pb-12">
+				<div class="w-100 pt-5 pb-5">
+					<button type="button" class="close"><i class="icon-x"></i></button>
+				</div>
+				{{#each portfolio.categories}}
+					<div class="col-6 col-lg-2 mb-5 mb-lg-0 text-center">
+						<a href={{this.url}} class="category d-inline-block">
+							<div class="box d-flex align-items-center justify-content-center m-auto">
+								<i class="icon-{{this.icon}}"></i>
+							</div>
+							<p class="text-capitalize mt-2 mb-0">{{{this.title}}}</p>
+						</a>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

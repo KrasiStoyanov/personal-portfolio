@@ -1,0 +1,15 @@
+.close {
+	opacity: 1;
+	cursor: pointer;
+	outline: 0;
+	@include transition();
+
+	&:hover,
+	&:active,
+	&:focus,
+	&.active {
+		color: $primary;
+		opacity: 1;
+		outline: 0;
+	}
+}

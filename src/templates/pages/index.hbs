@@ -15,29 +15,16 @@
 						<li class="d-inline-block mr-2" data-filter="all">
 							<a href="#" class="nav-link cursor-pointer pt-0 active">All</a>
 						</li>
-						<li class="d-inline-block mr-2" data-filter="1">
-							<a href="#" class="nav-link cursor-pointer pt-0">Web Design</a>
-						</li>
-						<li class="d-inline-block mr-2" data-filter="2">
-							<a href="#" class="nav-link cursor-pointer pt-0">Branding &amp; Identity</a>
-						</li>
-						<li class="d-inline-block mr-2" data-filter="3">
-							<a href="#" class="nav-link cursor-pointer pt-0">Graphic Design</a>
-						</li>
-						<li class="d-inline-block mr-2" data-filter="4">
-							<a href="#" class="nav-link cursor-pointer pt-0">Art &amp; Illustration</a>
-						</li>
-						<li class="d-inline-block mr-2" data-filter="5">
-							<a href="#" class="nav-link cursor-pointer pt-0">Literature</a>
-						</li>
-						<li class="d-inline-block" data-filter="6">
-							<a href="#" class="nav-link cursor-pointer pt-0">Photography</a>
-						</li>
+						{{#each portfolio.categories}}
+							<li class="d-inline-block mr-2" data-filter={{this.data-filter}}>
+								<a href="#" class="nav-link cursor-pointer pt-0">{{this.title}}</a>
+							</li>
+						{{/each}}
 					</ul>
 				</div>
     		</div>
     	</div>
-    	<div id="recent-works" class="container pr-sm-0 pl-sm-0 mb-12">
+    	<div id="recent-works" class="container pr-sm-0 pl-sm-0 mb-9">
     		<div class="row filtr-container">
     			{{#each portfolio.projects}}
 					<div class="col-12 col-md-6 mb-3 filtr-item" data-height-cells={{this.height-desktop}} data-height-cells-mobile={{this.height-mobile}} data-category={{this.category}}>

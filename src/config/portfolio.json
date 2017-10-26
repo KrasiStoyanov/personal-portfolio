@@ -1,7 +1,6 @@
 {
 	"projects": [
 		{
-			"id": 0,
 			"url": "#",
 			"title": "Krasi Stoyanov",
 			"date": "19 October, 2017",
@@ -12,7 +11,6 @@
 			"col-md": 6
 		},
 		{
-			"id": 1,
 			"url": "#",
 			"title": "Lonely bench",
 			"date": "15 September, 2017",
@@ -23,7 +21,6 @@
 			"col-md": 6
 		},
 		{
-			"id": 2,
 			"url": "#",
 			"title": "The beauty of The Netherlands",
 			"date": "15 September, 2017",
@@ -32,6 +29,44 @@
 			"height-desktop": 3,
 			"height-mobile": 7,
 			"col-md": 6
+		}
+	],
+	"categories": [
+		{
+			"url": "#",
+			"icon": "web-design",
+			"title": "Web design",
+			"data-filter": 1
+		},
+		{
+			"url": "#",
+			"icon": "branding-and-identity",
+			"title": "Branding &amp; identity",
+			"data-filter": 2
+		},
+		{
+			"url": "#",
+			"icon": "graphic-design",
+			"title": "graphic design",
+			"data-filter": 3
+		},
+		{
+			"url": "#",
+			"icon": "art-and-illustration",
+			"title": "Art &amp; illustration",
+			"data-filter": 4
+		},
+		{
+			"url": "#",
+			"icon": "literature",
+			"title": "Literature",
+			"data-filter": 5
+		},
+		{
+			"url": "#",
+			"icon": "photography",
+			"title": "Photography",
+			"data-filter": 6
 		}
 	]
 }
