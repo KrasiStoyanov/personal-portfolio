@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	projectRouter.init();
+	
 	var windowWidth = $(window).width();
 	if (windowWidth <= 768) {
 		resizeCells(true);
@@ -91,4 +93,8 @@ function toggleWorksBar () {
 			worksBarOverlay.css('visibility', 'hidden');
 		}, 400);
 	}
+}
+
+function onWorkClick (work) {
+	window.localStorage.setItem('work', JSON.stringify(work));
 }

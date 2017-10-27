@@ -1,7 +1,8 @@
 {
 	"projects": [
 		{
-			"url": "#",
+			"id": 1,
+			"url": "/branding-and-identity",
 			"title": "Krasi Stoyanov",
 			"date": "19 October, 2017",
 			"imageSrc": "./images/krasi-stoyanov.jpg",
@@ -11,7 +12,8 @@
 			"col-md": 6
 		},
 		{
-			"url": "#",
+			"id": 2,
+			"url": "/photography",
 			"title": "Lonely bench",
 			"date": "15 September, 2017",
 			"imageSrc": "./images/lonely-bench.jpg",
@@ -21,7 +23,8 @@
 			"col-md": 6
 		},
 		{
-			"url": "#",
+			"id": 3,
+			"url": "/photography",
 			"title": "The beauty of The Netherlands",
 			"date": "15 September, 2017",
 			"imageSrc": "./images/the-beauty-of-the-netherlands.jpg",

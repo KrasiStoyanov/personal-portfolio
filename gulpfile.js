@@ -28,18 +28,6 @@
                 .helpers({
                     json: function (context) {
                         return JSON.stringify(context);
-                    },
-                    limit: function(array, limit, options) {
-                        if(!array || array.length == 0) {
-                            return options.inverse(this);
-                        }
-
-                        var result = [ ];
-                        for(var i = 0; i < limit && i < array.length; ++i) {
-                            result.push(options.fn(array[i]));
-                        }
-
-                        return result.join('');
                     }
                 })
             )
@@ -92,7 +80,9 @@
             'node_modules/filterizr/dist/jquery.filterizr.min.js',
             'node_modules/mixitup/dist/mixitup.min.js',
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
+            'node_modules/navigo/lib/navigo.min.js',
             'src/js/modules/*.js',
+            'src/js/routes/*.js',
             'src/js/main.js'
         ])
         .pipe(sourcemaps.init())
