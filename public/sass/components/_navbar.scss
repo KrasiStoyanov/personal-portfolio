@@ -1,0 +1,49 @@
+.navbar-brand {
+	height: $navbar-brand-height;
+
+	img,
+	svg {
+		height: 100%;
+	}
+
+	img {
+		@include transition();
+	}
+
+	svg {
+		path {
+			@include transition();
+		}
+	}
+
+
+	&:hover {
+		svg {
+			path {
+				fill: $primary;
+			}
+		}
+
+		img {
+			opacity: .4;
+		}
+	}
+}
+
+.navbar-expand {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		$next: breakpoint-next($breakpoint, $grid-breakpoints);
+		$infix: breakpoint-infix($next, $grid-breakpoints);
+
+    	&#{$infix} {
+			@include media-breakpoint-up($next) {
+ 				.navbar-nav {
+					.nav-link {
+						padding-right: 0;
+						padding-left: 0;
+					}
+				}
+    		}
+		}
+	}
+}

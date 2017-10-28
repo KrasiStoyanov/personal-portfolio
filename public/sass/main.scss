@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+@import 'variables/main';
+
+@import "~bootstrap/scss/bootstrap";
+
+// Mixins
+@import 'utils/main';
+
+// Global styles
+@import 'base/main';
+
+// Components
+@import 'components/main';
+
+// Layout components - header, footer
+@import 'layout/main';
+
+// Pages
+@import 'pages/main';
+
+// 3rd-party
+@import 'vendors/main';

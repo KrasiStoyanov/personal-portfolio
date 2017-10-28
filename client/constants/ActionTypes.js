@@ -1,0 +1,1 @@
+export const TOGGLE_WORKS_BAR = 'TOGGLE_WORKS_BAR';
