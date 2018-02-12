@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 class WorksBarCategoryList extends Component {
-	createCategoryItem () {
+	render() {
 		return this.props.categories.map((category) => {
 			return (
 				<div key={category.dataFilter} className="col-6 col-lg-2 mb-5 mb-lg-0 text-center">
@@ -17,20 +16,12 @@ class WorksBarCategoryList extends Component {
 			);
 		});
 	}
-
-	render() {
-		return (
-			<div className="w-100 d-flex flex-wrap">
-				{this.createCategoryItem()}
-			</div>
-		);
-	}
 }
 
-function mapStatesToProps (state) {
+function mapStateToProps (state) {
 	return {
 		categories: state.categories
 	};
 }
 
-export default connect(mapStatesToProps)(WorksBarCategoryList);
+export default connect(mapStateToProps)(WorksBarCategoryList);

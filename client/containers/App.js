@@ -7,6 +7,12 @@ import Footer from '../components/Footer';
 import NavigationBar from './NavigationBar';
 import WorksBar from './WorksBar';
 
+// Routing
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Home from '../pages/Home';
+import BrandingAndIdentity from '../pages/BrandingAndIdentity';
+
 class App extends Component {
 	componentDidUpdate () {
 		let isWorksBarToggled = this.props.isWorksBarToggled.toggleWorksBar;
@@ -28,17 +34,22 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
-				<WorksBar />
-				<div id="site-wrapper" className="bg-light">
-					<div id="works-bar-overlay" onClick={() => this.props.toggleWorksBar(this.props.toggle)}></div>
-					<NavigationBar />
-					<div id="site">
-						{this.props.children}
+			<Router>
+				<div>
+					<WorksBar />
+					<div id="site-wrapper" className="bg-light">
+						<div id="works-bar-overlay" onClick={() => this.props.toggleWorksBar(this.props.toggle)}></div>
+						<NavigationBar />
+						<div id="site">
+							<Switch>
+								<Route exact path="/" component={Home} />
+								<Route path="/portfolio/branding-and-identity/:id" component={BrandingAndIdentity} />
+							</Switch>
+						</div>
+						<Footer />
 					</div>
-					<Footer />
 				</div>
-			</div>
+			</Router>
 		);
 	}
 }

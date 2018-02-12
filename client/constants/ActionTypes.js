@@ -1,1 +1,2 @@
 export const TOGGLE_WORKS_BAR = 'TOGGLE_WORKS_BAR';
+export const OPEN_PROJECT = 'OPEN_PROJECT';
