@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class WorksBarCategoryList extends Component {
-	render() {
+	createCategoryItem () {
 		return this.props.categories.map((category) => {
 			return (
 				<div key={category.dataFilter} className="col-6 col-lg-2 mb-5 mb-lg-0 text-center">
@@ -16,12 +16,20 @@ class WorksBarCategoryList extends Component {
 			);
 		});
 	}
+
+	render() {
+		return (
+			<div className="w-100 d-flex flex-wrap">
+				{this.createCategoryItem()}
+			</div>
+		);
+	}
 }
 
-function mapStateToProps (state) {
+function mapStatesToProps (state) {
 	return {
 		categories: state.categories
 	};
 }
 
-export default connect(mapStateToProps)(WorksBarCategoryList);
+export default connect(mapStatesToProps)(WorksBarCategoryList);

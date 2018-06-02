@@ -1,6 +1,6 @@
 @include media-breakpoint-down(sm) {
 	.container {
-		padding-right: $grid-gutter-width;
-		padding-left: $grid-gutter-width;
+		padding-right: $grid-gutter-width * 2;
+		padding-left: $grid-gutter-width * 2;
 	}
 }

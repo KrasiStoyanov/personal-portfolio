@@ -3,16 +3,23 @@ import { Link } from 'react-router-dom';
 
 class WorkCard extends Component {
 	render () {
+		let projectTitleForUrl = this.props.project.title.toLowerCase().split(' ').join('-');
+		let projectUrl = `/portfolio${this.props.project.url}/${projectTitleForUrl}`;
+
 		return (
-			<Link to={`${this.props.project.url}/${this.props.project.id}`} className="h-100 card d-flex flex-row work-link">
+		    <Link to={projectUrl} className="card d-flex flex-row work-link">
 				<div className="cover-image img-fluid" style={{backgroundImage: `url(/public/${this.props.project.imageSrc})`}}></div>
 				<div className="overlay"></div>
-				<div className="wrapper d-flex flex-row align-self-end pr-3 pb-3 pl-3">
+				<div className="wrapper d-flex flex-row align-self-end p-3">
 					<div className="content color-white">
 						<small className="date">{this.props.project.date}</small>
 						<h3 className="title mb-0 text-capitalize">{this.props.project.title}</h3>
 					</div>
 					<div className="arrow d-flex align-items-end">
+						<svg className="next-arrow" viewBox="0 0 6.5 12">
+							<line className="st0" x1="0" y1="-0.5" x2="6.5" y2="6.5"/>
+							<line className="st0" x1="0" y1="12.5" x2="6.5" y2="5.5"/>
+						</svg>
 						<span className="line"></span>
 					</div>
 				</div>

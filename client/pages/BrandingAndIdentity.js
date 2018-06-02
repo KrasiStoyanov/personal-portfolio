@@ -6,7 +6,6 @@ class BrandingAndIdentity extends Component {
 		return (
 		    <div>
 		    	<h1>{this.props.project.title}</h1>
-		    	<h2>{this.props.match.params.id}</h2>
 		    </div>
 		);
 	}
@@ -14,8 +13,11 @@ class BrandingAndIdentity extends Component {
 
 function mapStateToProps (state, ownProps) {
 	let project = state.projects.filter(function (object) {
-		let pageId = parseInt(ownProps.match.params.id);
-		return  object.id === pageId;
+		let pageTitle = ownProps.match.params.title;
+		let objectTitle = object.title.toLowerCase().split(' ').join('-');
+		console.log(pageTitle, objectTitle)
+
+		return  objectTitle === pageTitle;
 	});
 
 	return {

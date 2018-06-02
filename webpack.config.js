@@ -15,20 +15,16 @@ const extractSassPluginConfig = new ExtractTextPlugin({
 });
 
 module.exports = {
-    node: {
-        __dirname: true
-    },
-    devServer: {
-        historyApiFallback: true
-    },
     entry: [
         './client/index.js',
         './public/sass/main.scss'
     ],
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/'
+        path: path.resolve('dist'),
+        filename: 'bundle.js'
+    },
+    devServer: {
+        historyApiFallback: true
     },
     module: {
         loaders: [{

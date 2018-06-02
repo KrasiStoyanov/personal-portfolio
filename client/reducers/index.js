@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux';
+
+import NavigationLinksReducer from './NavigationLinksReducer';
 import PortfolioReducer from './PortfolioReducer';
 import WorkTypesReducer from './WorkTypesReducer';
-import ToggleWorksBarReducer from './ToggleWorksBarReducer';
 
 const allReducers = combineReducers({
+	navigationLinks: NavigationLinksReducer,
 	projects: PortfolioReducer,
-	categories: WorkTypesReducer,
-	toggleWorksBar: ToggleWorksBarReducer
+	categories: WorkTypesReducer
 });
 
 export default allReducers;
