@@ -8,9 +8,9 @@ class PhotoGrid extends Component {
 	render () {
 		return (
     		<div className="row filtr-container">
-				{this.props.projects.map((project) => {
+				{this.props.categories.map((project) => {
 					return (
-						<div className={`col-12 col-md-${project.colMd} mb-3 filtr-item`} key={`${project.title}-${project.id}`}>
+						<div className={`col-12 col-md-6 col-lg-${project.colMd} mb-2 mb-md-3 pr-2 pl-2 filtr-item`} key={`${project.title}-${project.id}`}>
 							<WorkCard project={project} />
 						</div>
 					);
@@ -22,7 +22,7 @@ class PhotoGrid extends Component {
 
 function mapStateToProps (state) {
 	return {
-		projects: state.projects
+		categories: state.portfolioCategories
 	};
 }
 

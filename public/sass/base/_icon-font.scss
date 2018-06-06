@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icon-font';
-    src: url('../fonts/icon-font.eot?8bwy47');
-    src: url('../fonts/icon-font.eot?8bwy47#iefix') format('embedded-opentype'),
-    url('../fonts/icon-font.ttf?8bwy47') format('truetype'),
-    url('../fonts/icon-font.woff?8bwy47') format('woff'),
-    url('../fonts/icon-font.svg?8bwy47#icon-font') format('svg');
+    src: url('../fonts/icon-font.eot?gmm56l');
+    src: url('../fonts/icon-font.eot?gmm56l#iefix') format('embedded-opentype'),
+    url('../fonts/icon-font.ttf?gmm56l') format('truetype'),
+    url('../fonts/icon-font.woff?gmm56l') format('woff'),
+    url('../fonts/icon-font.svg?gmm56l#icon-font') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,6 +23,10 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-caret-right:before {
+    content: "\e916";
 }
 
 .icon-art-and-illustration:before {
@@ -51,10 +55,6 @@
 
 .icon-scroll:before {
     content: "\e900";
-}
-
-.icon-arrow-right:before {
-    content: "\e901";
 }
 
 .icon-next-project:before {

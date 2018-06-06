@@ -4,7 +4,14 @@ $navbar-padding-x:                  0;
 $navbar-brand-height:               3.125rem; // 50px
 $navbar-brand-padding-y:            0;
 
-$navbar-light-color:                $black;
+$navbar-dark-color:                $dark;
+$navbar-dark-hover-color:          $primary;
+$navbar-dark-active-color:         $primary;
+$navbar-dark-toggler-border-color: transparent;
+
+$navbar-light-color:                $white;
 $navbar-light-hover-color:          $primary;
 $navbar-light-active-color:         $primary;
 $navbar-light-toggler-border-color: transparent;
+
+$zindex-navbar:                     1000;

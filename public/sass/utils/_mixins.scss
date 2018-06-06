@@ -3,3 +3,7 @@
         color: $color !important;
     }
 }
+
+@mixin light-shadow() {
+	box-shadow: 0 -2px 24px transparentize($black, .98), 0 6px 24px transparentize($black, .95), 0 24px 32px transparentize($black, .95);
+}

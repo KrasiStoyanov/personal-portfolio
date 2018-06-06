@@ -35,12 +35,12 @@ a {
         &::before {
             font-family: 'icon-font';
             backface-visibility: hidden;
-            content: "\f105";
-            color: $black;
+            content: "\e916";
+            color: $gray;
             line-height: 25px;
-            font-size: .875rem;
+            font-size: .475rem;
             position: absolute;
-            right: 0;
+            right: -1px;
             width: 25px;
             text-align: center;
             height: 25px;

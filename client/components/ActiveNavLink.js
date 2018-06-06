@@ -9,10 +9,11 @@ class ActiveNavLink extends Component {
 
         let marginClass = isNotFirst ? 'ml-6' : '';
         let activeClass = isActive ? 'active' : '';
+        let className = this.props.className;
 
         return(
             <li className={`nav-item ${activeClass} ${marginClass}`}>
-                <Link className="nav-link" to={this.props.to}>
+                <Link className={`nav-link ${className}`} to={this.props.to}>
                     {this.props.children}
                 </Link>
             </li>

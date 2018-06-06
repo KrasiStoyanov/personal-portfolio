@@ -12,8 +12,7 @@ class WorkCard extends Component {
 				<div className="overlay"></div>
 				<div className="wrapper d-flex flex-row align-self-end p-3">
 					<div className="content color-white">
-						<small className="date">{this.props.project.date}</small>
-						<h3 className="title mb-0 text-capitalize">{this.props.project.title}</h3>
+						<h3 className="color-white title mb-0 text-capitalize">{this.props.project.title}</h3>
 					</div>
 					<div className="arrow d-flex align-items-end">
 						<svg className="next-arrow" viewBox="0 0 6.5 12">

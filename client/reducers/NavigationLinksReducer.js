@@ -5,10 +5,6 @@ export default function () {
 			"title": "Home"
 		},
 		{
-			"url": "/works",
-			"title": "Works"
-		},
-		{
 			"url": "/about",
 			"title": "About"
 		},

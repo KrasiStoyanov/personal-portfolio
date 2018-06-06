@@ -1,3 +1,23 @@
+.navbar-light {
+	.navbar-brand {
+		svg {
+			path {
+				fill: $white;
+			}
+		}
+	}
+}
+
+.navbar-dark {
+	.navbar-brand {
+		svg {
+			path {
+				fill: $dark;
+			}
+		}
+	}
+}
+
 .navbar-brand {
 	height: $navbar-brand-height;
 
@@ -46,4 +66,12 @@
     		}
 		}
 	}
+}
+
+#navigation-bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: $zindex-navbar;
 }

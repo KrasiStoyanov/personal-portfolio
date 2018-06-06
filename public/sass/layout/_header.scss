@@ -1,0 +1,51 @@
+.project-header {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparentize($black, .45);
+    }
+
+    .content {
+        z-index: 1;
+
+	    #scroll-down {
+	    	height: 46px;
+	    	display: inline-block;
+	    	cursor: pointer;
+	    	position: absolute;
+	    	bottom: 40px;
+	    	margin: auto;
+			
+			&:hover {
+				.mouse {
+					.shape {
+						stroke: $white;
+					}
+
+					.mouse-wheel {
+						transform: translateY(35%);
+					}
+				}
+			}
+
+	    	.mouse {
+	    		height: 100%;
+
+		    	.shape {
+			        fill: none;
+			        stroke: transparentize($white, .4);
+			        stroke-width: 2;
+			        stroke-linecap: round;
+			        transition: stroke .3s ease-in-out, transform .4s ease-out;
+		    	}
+		    }
+	    }
+    }
+}
