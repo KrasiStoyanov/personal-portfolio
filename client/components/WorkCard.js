@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom';
 
 class WorkCard extends Component {
 	render () {
-		let projectTitleForUrl = this.props.project.title.toLowerCase().split(' ').join('-');
-		let projectUrl = `/portfolio${this.props.project.url}/${projectTitleForUrl}`;
-
 		return (
-		    <Link to={projectUrl} className="card d-flex flex-row work-link">
+		    <Link to={this.props.project.url} className="card d-flex flex-row work-link">
 				<div className="cover-image img-fluid" style={{backgroundImage: `url(/public/${this.props.project.imageSrc})`}}></div>
 				<div className="overlay"></div>
 				<div className="wrapper d-flex flex-row align-self-end p-3">

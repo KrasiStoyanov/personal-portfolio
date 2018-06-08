@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { changeNavigationBarColorSchemeClass } from '../actions/index';
 import { Link } from 'react-router-dom';
 
 import PhotoGrid from '../containers/PhotoGrid';
 
 class Home extends Component {
+	componentWillMount() {
+		this.props.dispatch(changeNavigationBarColorSchemeClass('navbar-dark'));
+	}
+
 	render() {
 		return (
 			<div className="pt-11">
@@ -16,11 +22,17 @@ class Home extends Component {
 		    		</div>
 		    	</div>
 		    	<div id="recent-works" className="container pr-sm-0 pl-sm-0 mb-9">
-	    			<PhotoGrid />
+	    			<PhotoGrid iterable={this.props.categories} />
 		    	</div>
 		    </div>
 		);
 	}
 }
 
-export default Home;
+function mapStateToProps (state, ownProps, ...args) {
+	return {
+		categories: state.portfolioCategories
+	};
+}
+
+export default connect(mapStateToProps)(Home);

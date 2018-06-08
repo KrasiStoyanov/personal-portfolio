@@ -143,4 +143,111 @@
 			}
 		}
 	}
+
+	&.image-swiper {
+		overflow: hidden;
+		background-color: $dark;
+
+		.swiper-container {
+			overflow: visible;
+
+			&:hover {
+				cursor: move;
+				cursor: grab;
+			}
+
+			&:active {
+				cursor: grabbing;
+			}
+		}
+
+		.swiper-wrapper {
+			align-items: center;
+		}
+
+		.swiper-pagination {
+			bottom: calc((-#{$bullet-size} / 2) - (#{$spacer} * 6));
+			line-height: 0;
+
+			.swiper-pagination-bullet {
+				width: $bullet-size;
+				height: $bullet-size;
+				margin: 0 $spacer;
+				background-color: $white;
+				opacity: .35;
+				border: 3px solid transparentize($white, 1);
+				background-clip: padding-box;
+				transition: all .3s ease-in-out;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			.swiper-pagination-bullet-active {
+				background-color: transparent;
+				border: 3px solid $white;
+				opacity: 1;
+			}
+		}
+	}
+
+	&.following-project {
+		.card {
+			min-height: 300px;
+
+			.text {
+				transition: transform .3s ease-in-out;
+			}
+
+			.arrow {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				transition: right .3s ease-in-out, left .3s ease-in-out;
+			}
+		}
+
+		.next-project {
+			text-align: left;
+
+			.card {
+				.arrow {
+					right: -25%;
+				}
+				
+				&:hover {
+					.text {
+						transform: translateX(-50%);
+					}
+
+					.arrow {
+						right: -50%;
+					}
+				}
+			}
+		}
+
+		.previous-project {
+			text-align: right;
+
+			.card {
+				.arrow {
+					left: -25%;
+					transform: rotate(180deg);
+				}
+
+				&:hover {
+					.text {
+						transform: translateX(50%);
+					}
+
+					.arrow {
+						left: -50%;
+					}
+				}
+			}
+		}
+	}
 }

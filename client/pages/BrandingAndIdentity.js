@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { changeNavigationBarColorSchemeClass } from '../actions/index';
 
-import SectionDescription from '../components/project/SectionDescription';
-import SectionQuote from '../components/project/SectionQuote';
-import SectionApproach from '../components/project/SectionApproach';
-import SectionColors from '../components/project/SectionColors';
+import PhotoGrid from '../containers/PhotoGrid';
 
 class BrandingAndIdentity extends Component {
 	constructor(props) {
@@ -13,37 +10,25 @@ class BrandingAndIdentity extends Component {
 	}
 
 	componentWillMount() {
-		this.props.dispatch(changeNavigationBarColorSchemeClass('navbar-light'));
+		this.props.dispatch(changeNavigationBarColorSchemeClass('navbar-dark'));
 	}
 
 	render () {
-		let project = this.props.project;
-
-		let overview = project.overview ? <SectionDescription descriptionContent={project.overview} /> : '';
-		let quote = project.quote ? <SectionQuote logo={project.logo} quoteContent={project.quote} /> : '';
-		let purpose = project.purpose ? <SectionDescription descriptionContent={project.purpose} /> : '';
-		let approach = project.approach ? <SectionApproach approachContent={project.approach} /> : '';
-		let colors = project.colors ? <SectionColors logo={project.logo} colorsContent={project.colors} /> : '';
+		let projects = this.props.projects;
+		let pathUrl = this.props.pathUrl;
 
 		return (
-		    <div id="project">
-		    	<header className="project-header text-center d-flex flex-column align-items-center justify-content-center color-white" style={{backgroundImage: `url(/public/${project.imageSrc})`}}>
-		    		<div className="overlay"></div>
-		    		<div className="content">
-		    			<h1 className="color-white mb-0">{project.title}</h1>
-		    			<a id="scroll-down">
-				    		<svg className="mouse" viewBox="0 0 30 46">
-								<path className="shape" d="M15,1C7.3,1,1,7.3,1,15v16c0,7.7,6.3,14,14,14s14-6.3,14-14V15C29,7.3,22.7,1,15,1z"/>
-								<line className="shape mouse-wheel" x1="15" y1="12" x2="15" y2="18"/>
-							</svg>
-						</a>
+			<div className="pt-11">
+		    	<div className="container pr-sm-0 pl-sm-0 pt-12 pb-12">
+		    		<div className="row">
+		    			<div className="col-12 col-md-8 col-lg-6 pr-2 pl-2 ">
+		    				<h2 className="mb-3 text-capitalize">Hi, I am Krasi. I am a UI Designer and a Front End Developer.</h2>
+		    				<p className="mb-0">Have something to say?</p>
+		    			</div>
 		    		</div>
-		    	</header>
-		    	<div className="project-content">
-		    		{overview}
-		    		{quote}
-		    		{purpose}
-		    		{approach}
+		    	</div>
+		    	<div id="recent-works" className="container pr-sm-0 pl-sm-0 mb-9">
+	    			<PhotoGrid iterable={projects} />
 		    	</div>
 		    </div>
 		);
@@ -51,16 +36,12 @@ class BrandingAndIdentity extends Component {
 }
 
 function mapStateToProps (state, ownProps, ...args) {
-	// console.log(state, ownProps)
-	let pageTitle = ownProps.match.params.title;
-	let project = state.brandingAndIdentity.filter(function (object) {
-		let objectTitle = object.title.toLowerCase().split(' ').join('-');
-
-		return  objectTitle === pageTitle;
-	});
+	let projects = state.brandingAndIdentity;
+	let pageUrl = ownProps.match.params.url;
 
 	return {
-		project: project[0]
+		projects,
+		pageUrl
 	};
 }
 

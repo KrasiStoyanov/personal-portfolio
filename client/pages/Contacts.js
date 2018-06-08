@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { changeNavigationBarColorSchemeClass } from '../actions/index';
 
 class Contacts extends Component {
+	componentWillMount() {
+		this.props.dispatch(changeNavigationBarColorSchemeClass('navbar-dark'));
+	}
+
 	render() {
 		return (
 			<div>
@@ -17,4 +23,8 @@ class Contacts extends Component {
 	}
 }
 
-export default Contacts;
+function mapStateToProps (state, ownProps, ...args) {
+	return {};
+}
+
+export default connect(mapStateToProps)(Contacts);

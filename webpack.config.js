@@ -2,6 +2,7 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 const htmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './public/index.html',
@@ -41,7 +42,13 @@ module.exports = {
                 test: /\.scss$/,
                 use: extractSassPluginConfig.extract({
                     use: [{
-                        loader: "css-loader"
+                        loader: "css-loader",
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: () => [autoprefixer()]
+                        }
                     }, {
                         loader: "sass-loader",
                         options: {

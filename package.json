@@ -16,6 +16,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-id-swiper": "^1.6.4",
     "react-redux": "^5.0.6",
     "react-render-html": "^0.6.0",
     "react-router": "^4.2.0",
@@ -34,6 +35,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-3": "^6.24.1"
+    "babel-preset-stage-3": "^6.24.1",
+    "postcss-loader": "^2.1.5"
   }
 }
