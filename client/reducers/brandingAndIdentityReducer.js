@@ -5,18 +5,13 @@ export default function () {
 			"url": "/branding-and-identity/krasi-stoyanov",
 			"title": "Krasi Stoyanov",
 			"date": "19 October, 2017",
-			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-cover.jpg",
-			"logo": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-logo.svg",
+			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/cover-image.jpg",
+			"logo": "./images/branding-and-identity/krasi-stoyanov/logo.svg",
 			"category": 2,
 			"overview": {
 				"title": "Overview",
 				"heading": "The brand",
 				"description": "This is not just a monogram, this is the representation of the person using a single monogram/symbol. It demonstrates a certain amount of energy and creativity, combined into a single yet somehow, complicated digital representation.",
-				// "images": [
-				// 	{
-				// 		"url": "./images/krasi-stoyanov.jpg"
-				// 	}
-				// ]
 			},
 			"quote": {
 				"quote": ["Great acts", "are made up", "of small deeds"]
@@ -31,12 +26,8 @@ export default function () {
 				"heading": "The approach",
 				"description": "Having to combine letters into a good looking logo is always considered hardship. Every monogram tells a story, that is why each monogram has its symbolic description. Each piece of it is a particular part of or a whole object, idea, symbol, etc. That is why the main symbol here is the <span className='text-primary'>leaf</span>.",
 				"images": [
-					{
-						"url": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-approach-1.jpg"
-					},
-					{
-						"url": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-approach-2.jpg"
-					}
+					"./images/branding-and-identity/krasi-stoyanov/approach-1.jpg",
+					"./images/branding-and-identity/krasi-stoyanov/approach-2.jpg"
 				]
 			},
 			"images": [
@@ -51,18 +42,13 @@ export default function () {
 			"url": "/branding-and-identity/krasi-stoyanov-2",
 			"title": "Krasi Stoyanov 2",
 			"date": "19 October, 2017",
-			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-cover.jpg",
-			"logo": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-logo.svg",
+			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/cover-image.jpg",
+			"logo": "./images/branding-and-identity/krasi-stoyanov/logo.svg",
 			"category": 2,
 			"overview": {
 				"title": "Overview",
 				"heading": "The brand",
 				"description": "This is not just a monogram, this is the representation of the person using a single monogram/symbol. It demonstrates a certain amount of energy and creativity, combined into a single yet somehow, complicated digital representation.",
-				// "images": [
-				// 	{
-				// 		"url": "./images/krasi-stoyanov.jpg"
-				// 	}
-				// ]
 			},
 			"quote": {
 				"quote": ["Great acts", "are made up", "of small deeds"]
@@ -77,12 +63,8 @@ export default function () {
 				"heading": "The approach",
 				"description": "Having to combine letters into a good looking logo is always considered hardship. Every monogram tells a story, that is why each monogram has its symbolic description. Each piece of it is a particular part of or a whole object, idea, symbol, etc. That is why the main symbol here is the <span className='text-primary'>leaf</span>.",
 				"images": [
-					{
-						"url": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-approach-1.jpg"
-					},
-					{
-						"url": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-approach-2.jpg"
-					}
+					"./images/branding-and-identity/krasi-stoyanov/approach-1.jpg",
+					"./images/branding-and-identity/krasi-stoyanov/approach-2.jpg"
 				]
 			},
 			"colMd": 4
@@ -92,18 +74,13 @@ export default function () {
 			"url": "/branding-and-identity/krasi-stoyanov-3",
 			"title": "Krasi Stoyanov 3",
 			"date": "19 October, 2017",
-			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-cover.jpg",
-			"logo": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-logo.svg",
+			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/cover-image.jpg",
+			"logo": "./images/branding-and-identity/krasi-stoyanov/logo.svg",
 			"category": 2,
 			"overview": {
 				"title": "Overview",
 				"heading": "The brand",
 				"description": "This is not just a monogram, this is the representation of the person using a single monogram/symbol. It demonstrates a certain amount of energy and creativity, combined into a single yet somehow, complicated digital representation.",
-				// "images": [
-				// 	{
-				// 		"url": "./images/krasi-stoyanov.jpg"
-				// 	}
-				// ]
 			},
 			"quote": {
 				"quote": ["Great acts", "are made up", "of small deeds"]
@@ -118,12 +95,8 @@ export default function () {
 				"heading": "The approach",
 				"description": "Having to combine letters into a good looking logo is always considered hardship. Every monogram tells a story, that is why each monogram has its symbolic description. Each piece of it is a particular part of or a whole object, idea, symbol, etc. That is why the main symbol here is the <span className='text-primary'>leaf</span>.",
 				"images": [
-					{
-						"url": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-approach-1.jpg"
-					},
-					{
-						"url": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-approach-2.jpg"
-					}
+					"./images/branding-and-identity/krasi-stoyanov/approach-1.jpg",
+					"./images/branding-and-identity/krasi-stoyanov/approach-2.jpg"
 				]
 			},
 			"colMd": 4

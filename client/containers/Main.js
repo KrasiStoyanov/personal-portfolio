@@ -5,6 +5,8 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import BrandingAndIdentity from '../pages/BrandingAndIdentity';
 import BrandingAndIdentityProject from '../pages/projects/BrandingAndIdentityProject';
+import WebDesign from '../pages/WebDesign';
+import WebDesignProject from '../pages/projects/WebDesignProject';
 import Contacts from '../pages/Contacts';
 import Photography from '../pages/Photography';
 
@@ -22,6 +24,8 @@ class Main extends Component {
 					<Route exact path='/contacts' component={Contacts}/>
 					<Route exact path='/branding-and-identity' component={BrandingAndIdentity} />
 					<Route path='/branding-and-identity/:title' component={BrandingAndIdentityProject} />
+					<Route exact path='/web-design' component={WebDesign} />
+					<Route path='/web-design/:title' component={WebDesignProject} />
 					<Route path='/photography/:title' component={Photography}/>
 				</Switch>
 			</div>

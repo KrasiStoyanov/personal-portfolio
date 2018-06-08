@@ -196,6 +196,17 @@
 		.card {
 			min-height: 300px;
 
+			.overlay {
+				opacity: .35;
+				visibility: visible;
+			}
+
+			&:hover {
+				.overlay {
+					opacity: .9;
+				}
+			}
+
 			.text {
 				transition: transform .3s ease-in-out;
 			}
@@ -214,16 +225,16 @@
 
 			.card {
 				.arrow {
-					right: -25%;
+					right: -50px;
 				}
 				
 				&:hover {
 					.text {
-						transform: translateX(-50%);
+						transform: translateX(-50px);
 					}
 
 					.arrow {
-						right: -50%;
+						right: -100px;
 					}
 				}
 			}
@@ -234,17 +245,17 @@
 
 			.card {
 				.arrow {
-					left: -25%;
+					left: -50px;
 					transform: rotate(180deg);
 				}
 
 				&:hover {
 					.text {
-						transform: translateX(50%);
+						transform: translateX(50px);
 					}
 
 					.arrow {
-						left: -50%;
+						left: -100px;
 					}
 				}
 			}

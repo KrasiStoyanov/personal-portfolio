@@ -21,10 +21,10 @@ class SectionDescription extends Component {
                         </div>
                         <div className="images-wrapper col-12 col-lg-6 d-flex align-items-center justify-content-center">
                             <div className="square">
-                                {images.map((image) => {
+                                {images.map((image, index) => {
                                     return (
-                                        <div key={image.url} className="image-wrapper">
-                                            <img src={`public/${image.url}`}/>
+                                        <div key={index} className="image-wrapper">
+                                            <img src={`public/${image}`}/>
                                         </div>
                                     );
                                 })}

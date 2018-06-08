@@ -10,6 +10,7 @@ class SectionDescription extends Component {
         let description = descriptionContent.description;
         let images = descriptionContent.images ? descriptionContent.images : [];
         let doesHaveImages = images.length ? 'mb-12' : '';
+        let marginBottomImages = descriptionContent.imageMarginBottom ? descriptionContent.imageMarginBottom : 0;
 
         return(
             <section className="section pt-6 pt-lg-12 pb-6 pb-lg-12">
@@ -23,9 +24,12 @@ class SectionDescription extends Component {
                 <div className="container">
                     <div className="row">
                         {images.map((image, index) => {
+                            if (images.length - 1 === index) {
+                                marginBottomImages = 0;
+                            }
                             return (
-                                <div className="col-12" key={index}>
-                                    <img className="w-100" src={`public/${image.url}`} />
+                                <div className={`col-12 p-0 mb-${marginBottomImages}`} key={index}>
+                                    <img className="w-100" src={`public/${image}`} />
                                 </div>
                             );
                         })}

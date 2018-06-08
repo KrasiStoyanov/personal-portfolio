@@ -6,7 +6,7 @@ export default function () {
 			"title": "Web design",
 			"dataFilter": 1,
 			"colMd": 4,
-			"imageSrc": "./images/web-design/quizco.png"
+			"imageSrc": "./images/web-design/quizco/cover-image.png"
 		},
 		{
 			"url": "/branding-and-identity",
