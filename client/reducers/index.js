@@ -1,18 +1,20 @@
 import { combineReducers } from 'redux';
 
 import brandingAndIdentity from './brandingAndIdentityReducer';
+import literature from './literatureReducer';
 import webDesign from './webDesignReducer';
 
 import navigationLinks from './navigationLinksReducer';
-import portfolioCategories from './portfolioCategoriesReducer';
 import navigationBarColorSchemeClass from './navigationBarColorSchemeClass';
+import portfolioCategories from './portfolioCategoriesReducer';
 
 const allReducers = combineReducers({
 	brandingAndIdentity,
-	webDesign,
+	literature,
+	navigationBarColorSchemeClass,
 	navigationLinks,
 	portfolioCategories,
-	navigationBarColorSchemeClass
+	webDesign,
 });
 
 export default allReducers;

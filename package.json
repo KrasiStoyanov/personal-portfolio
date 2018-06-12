@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "dependencies": {
     "bootstrap": "4.0.0-beta.2",
@@ -15,6 +17,7 @@
     "path": "^0.12.7",
     "prop-types": "^15.6.1",
     "react": "^16.0.0",
+    "react-anchor-link-smooth-scroll": "^1.0.10",
     "react-dom": "^16.0.0",
     "react-id-swiper": "^1.6.4",
     "react-redux": "^5.0.6",

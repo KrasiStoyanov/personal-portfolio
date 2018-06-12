@@ -6,7 +6,7 @@ class WorksBar extends Component {
 		return(
 		    <div id="works-bar">
 				<div className="content">
-					<div className="container flex-column">
+					<div className="container container-xs container-sm container-md flex-column">
 						<div className="row pb-12">
 							<div className="w-100 pt-5 pb-5">
 								<button type="button" className="close" onClick={() => this.props.toggleWorksBarVisibility()}><i className="icon-x"></i></button>

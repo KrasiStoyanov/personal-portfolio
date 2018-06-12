@@ -6,7 +6,7 @@
 	}
 
 	.description {
-		line-height: $description-line-height; // 30px
+		line-height: $description-line-height;
 	}
 
 	&.quote {
@@ -259,6 +259,12 @@
 					}
 				}
 			}
+		}
+	}
+
+	&.literature {
+		.description {
+			line-height: $literature-line-height;
 		}
 	}
 }

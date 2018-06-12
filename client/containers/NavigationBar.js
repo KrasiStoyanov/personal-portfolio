@@ -34,7 +34,7 @@ class NavigationBar extends Component {
 						</svg>
 					</Link>
 					<button className="navbar-toggler align-self-end" type="button" data-toggle="collapse" data-target="#navigation-bar-content" aria-controls="navigation-bar-content" aria-expanded="false" aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
+						<span className="icon-menu"></span>
 					</button>
 
 					<div className="collapse navbar-collapse justify-content-end" id="navigation-bar-content">
@@ -44,7 +44,7 @@ class NavigationBar extends Component {
 									<ActiveNavLink key={index} to={link.url} index={index}>{link.title}</ActiveNavLink>
 								);
 							})}
-							<li className="nav-item ml-6">
+							<li className="nav-item ml-6 d-none d-sm-block">
 								<a id="works-bar-trigger" className='nav-link icon' href="#" onClick={this.toggleWorksBarVisibility.bind(this)}><i className="icon-grid"></i></a>
 							</li>
 						</ul>

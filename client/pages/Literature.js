@@ -4,7 +4,7 @@ import { changeNavigationBarColorSchemeClass } from '../actions/index';
 
 import PhotoGrid from '../containers/PhotoGrid';
 
-class WebDesign extends Component {
+class Literature extends Component {	
 	constructor(props) {
 		super(props);
 	}
@@ -22,8 +22,8 @@ class WebDesign extends Component {
 		    	<div className="container pr-sm-0 pl-sm-0 pt-12 pb-12">
 		    		<div className="row">
 		    			<div className="col-12 col-md-8 col-lg-6 pr-2 pl-2 ">
-		    				<h2 className="mb-3 text-capitalize">Web Design</h2>
-		    				<p className="mb-0">Various web projects I have been working on over the years.</p>
+		    				<h2 className="mb-3 text-capitalize">Literature</h2>
+		    				<p className="mb-0">From the bottom of my heart I write thee the purest of love.</p>
 		    			</div>
 		    		</div>
 		    	</div>
@@ -36,7 +36,7 @@ class WebDesign extends Component {
 }
 
 function mapStateToProps (state, ownProps, ...args) {
-	let projects = state.webDesign;
+	let projects = state.literature;
 	let pageUrl = ownProps.match.params.url;
 
 	return {
@@ -45,4 +45,4 @@ function mapStateToProps (state, ownProps, ...args) {
 	};
 }
 
-export default connect(mapStateToProps)(WebDesign);
+export default connect(mapStateToProps)(Literature);

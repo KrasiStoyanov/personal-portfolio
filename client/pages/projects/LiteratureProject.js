@@ -10,7 +10,7 @@ import SectionColors from '../../components/project/SectionColors';
 import SectionFollowingProject from '../../components/project/SectionFollowingProject';
 import SectionImageSwiper from '../../components/project/SectionImageSwiper';
 
-class BrandingAndIdentityProject extends Component {
+class Literatureproject extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -28,11 +28,6 @@ class BrandingAndIdentityProject extends Component {
 		};
 
 		let overview = project.overview ? <SectionDescription descriptionContent={project.overview} /> : '';
-		let quote = project.quote ? <SectionQuote logo={project.logo} quoteContent={project.quote} /> : '';
-		let purpose = project.purpose ? <SectionDescription descriptionContent={project.purpose} /> : '';
-		let approach = project.approach ? <SectionApproach approachContent={project.approach} /> : '';
-		let colors = project.colors ? <SectionColors logo={project.logo} colorsContent={project.colors} /> : '';
-		let images = project.images ? <SectionImageSwiper images={project.images} /> : '';
 		let followingProjectsSection = followingProjects.length > 0 ? <SectionFollowingProject projects={followingProjects} /> : '';
 
 		return (
@@ -40,10 +35,6 @@ class BrandingAndIdentityProject extends Component {
 		    	<Header projectHeader={projectHeader} />
 		    	<div id="project-content" className="project-content">
 		    		{overview}
-		    		{quote}
-		    		{purpose}
-		    		{approach}
-		    		{images}
 		    		{followingProjectsSection}
 		    	</div>
 		    </div>
@@ -52,8 +43,7 @@ class BrandingAndIdentityProject extends Component {
 }
 
 function mapStateToProps (state, ownProps, ...args) {
-	// console.log(state, ownProps)
-	let projects = state.brandingAndIdentity;
+	let projects = state.literature;
 	let projectsLength = projects.length;
 
 	let pagetitle = ownProps.match.params.title;
@@ -113,4 +103,4 @@ function mapStateToProps (state, ownProps, ...args) {
 	};
 }
 
-export default connect(mapStateToProps)(BrandingAndIdentityProject);
+export default connect(mapStateToProps)(Literatureproject);

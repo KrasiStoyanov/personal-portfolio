@@ -5,8 +5,6 @@
 	@include transition();
 
 	&:hover,
-	&:active,
-	&:focus,
 	&.active {
 		color: $primary;
 		opacity: 1;

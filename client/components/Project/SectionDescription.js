@@ -11,14 +11,20 @@ class SectionDescription extends Component {
         let images = descriptionContent.images ? descriptionContent.images : [];
         let doesHaveImages = images.length ? 'mb-12' : '';
         let marginBottomImages = descriptionContent.imageMarginBottom ? descriptionContent.imageMarginBottom : 0;
+        let textAlignmentClass = descriptionContent.textAlignmentClass ? descriptionContent.textAlignmentClass : '';
+        let colWidth = descriptionContent.colWidth ? descriptionContent.colWidth : 6;
+        let colOffset = descriptionContent.colOffset ? descriptionContent.colOffset : 3;
+        let className = descriptionContent.className ? descriptionContent.className : '';
 
         return(
-            <section className="section pt-6 pt-lg-12 pb-6 pb-lg-12">
+            <section className={`section ${className} pt-6 pt-lg-12 pb-6 pb-lg-12`}>
                 <div className={`container ${doesHaveImages}`}>
-                    <div className="col-12 col-lg-6 offset-lg-3 text-center pr-0 pl-0">
-                        <small className="title text-uppercase text-primary mb-1">{title}</small>
-                        <h2 className="text-capitalize mb-3">{heading}</h2>
-                        <h4 className="description font-weight-normal text-secondary m-0">{renderHTML(description)}</h4>
+                    <div className="row">
+                        <div className={`col-12 col-lg-${colWidth} offset-lg-${colOffset} text-center pr-sm-0 pl-sm-0`}>
+                            <small className="title text-uppercase text-primary mb-1">{title}</small>
+                            <h2 className="text-capitalize mb-3">{heading}</h2>
+                            <h4 className={`description font-weight-normal text-secondary ${textAlignmentClass} m-0`}>{renderHTML(description)}</h4>
+                        </div>
                     </div>
                 </div>
                 <div className="container">

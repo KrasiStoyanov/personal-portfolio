@@ -12,9 +12,9 @@ class SectionDescription extends Component {
 
         return(
             <section className="section approach pt-6 pt-lg-12 pb-6 pb-lg-12">
-                <div className='container pr-0 pl-0'>
+                <div className='container pr-sm-0 pl-sm-0'>
                     <div className="row">
-                        <div className="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                        <div className="col-12 col-lg-6 mb-5 text-center text-sm-left mb-sm-0 d-flex flex-column justify-content-center">
                             <small className="title text-uppercase text-primary mb-1">{title}</small>
                             <h2 className="text-capitalize mb-3">{heading}</h2>
                             <h4 className="description font-weight-normal text-secondary m-0">{renderHTML(description)}</h4>

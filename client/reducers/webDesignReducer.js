@@ -10,7 +10,7 @@ export default function () {
 			"overview": {
 				"title": "what it is about",
 				"heading": "The project",
-				"description": "Everybody has a favorite film or TV series. So everybody feels pleased when they are asked to share something about thm. In this case, I was asked to do so. I am a big anime fan and I love all kinds of animes. But the most powerful one of them is The Fullmetal Alchemist.",
+				"description": "Everybody has a favorite film or TV series. So everybody feels pleased when they are asked to share something about them. In this case, I was asked to do so. I am a big anime fan and I love all kinds of animes. But the most powerful one of them is The Fullmetal Alchemist.",
 				"images": [
 					"./images/web-design/fullmetal-alchemist/part-1.png",
 					"./images/web-design/fullmetal-alchemist/part-2.png",

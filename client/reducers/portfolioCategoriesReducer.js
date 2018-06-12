@@ -14,7 +14,7 @@ export default function () {
 			"title": "Branding & identity",
 			"dataFilter": 2,
 			"colMd": 4,
-			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/krasi-stoyanov-cover.jpg"
+			"imageSrc": "./images/branding-and-identity/krasi-stoyanov/cover-image.jpg"
 		},
 		{
 			"url": "/graphic-design",
