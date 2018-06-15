@@ -49,7 +49,7 @@ export default function () {
 			"overview": {
 				"title": "what it is about",
 				"heading": "The project",
-				"description": "Everybody has a favorite film or TV series. So everybody feels pleased when they are asked to share something about thm. In this case, I was asked to do so. I am a big anime fan and I love all kinds of animes. But the most powerful one of them is The Fullmetal Alchemist.",
+				"description": "Are you interested in testing your music knowledge? Then this is the right app for you. With the ability to choose from <span className='text-primary'>5</span> different types of quizes, this app will test all your musical knowledge in the <span className='text-primary'>metal</span> genres.",
 				"images": [
 					"./images/web-design/quizco/part-1.png",
 					"./images/web-design/quizco/part-2.png",
@@ -59,6 +59,32 @@ export default function () {
 				"imageMarginBottom": 3
 			},
 			"website": "https://quizco.000webhostapp.com/",
+			"colMd": 4
+		},
+		{
+			id: 2,
+			"url": "/web-design/hactex",
+			"title": "Hactex",
+			"date": "12 November, 2016",
+			"imageSrc": "./images/web-design/hactex/cover-image.png",
+			"category": 1,
+			"overview": {
+				"title": "what it is about",
+				"heading": "The project",
+				"description": "An unsuccessful attempt to create a Creative Agency with the idea of selling Web Development and Design services. Here I present the final design of the website, excluding some unfinished parts, concerning <span className='text-primary'>navigation</span> and <span className='text-primary'>project request</span>.",
+				"images": [
+					"./images/web-design/hactex/part-1.png",
+					"./images/web-design/hactex/part-2.png",
+					"./images/web-design/hactex/part-3.png",
+					"./images/web-design/hactex/part-4.png",
+					"./images/web-design/hactex/part-5.png"
+				]
+			},
+			"images": [
+				"./images/web-design/hactex/showcase-1.png",
+				"./images/web-design/hactex/showcase-2.png",
+				"./images/web-design/hactex/showcase-3.png"
+			],
 			"colMd": 4
 		},
 	];

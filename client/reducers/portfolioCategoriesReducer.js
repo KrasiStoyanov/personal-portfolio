@@ -22,7 +22,7 @@ export default function () {
 			"title": "graphic design",
 			"dataFilter": 3,
 			"colMd": 4,
-			"imageSrc": "./images/graphic-design/magazine-cover.png"
+			"imageSrc": "./images/graphic-design/natured/cover-image.png"
 		},
 		{
 			"url": "/art-and-illustration",
@@ -30,7 +30,7 @@ export default function () {
 			"title": "Art & illustration",
 			"dataFilter": 4,
 			"colMd": 4,
-			"imageSrc": "./images/art-and-illustration/cara-delevingne.png"
+			"imageSrc": "./images/art-and-illustration/space-cara.png"
 		},
 		{
 			"url": "/literature",

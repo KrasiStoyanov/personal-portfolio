@@ -10,7 +10,7 @@ import SectionColors from '../../components/project/SectionColors';
 import SectionFollowingProject from '../../components/project/SectionFollowingProject';
 import SectionImageSwiper from '../../components/project/SectionImageSwiper';
 
-class Literatureproject extends Component {
+class LiteratureProject extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -46,11 +46,11 @@ function mapStateToProps (state, ownProps, ...args) {
 	let projects = state.literature;
 	let projectsLength = projects.length;
 
-	let pagetitle = ownProps.match.params.title;
+	let pageTitle = ownProps.match.params.title;
 	let currentProject = projects.filter((p) => {
-		let currentPageTitle = p.title.toLowerCase().split(' ').join('-');
+		let currentpageTitle = p.title.toLowerCase().split(' ').join('-');
 
-		return currentPageTitle === pagetitle;
+		return currentpageTitle === pageTitle;
 	});
 
 	currentProject = currentProject[0];
@@ -103,4 +103,4 @@ function mapStateToProps (state, ownProps, ...args) {
 	};
 }
 
-export default connect(mapStateToProps)(Literatureproject);
+export default connect(mapStateToProps)(LiteratureProject);

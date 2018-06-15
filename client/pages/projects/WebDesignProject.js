@@ -58,11 +58,11 @@ function mapStateToProps (state, ownProps, ...args) {
 	let projects = state.webDesign;
 	let projectsLength = projects.length;
 
-	let pagetitle = ownProps.match.params.title;
+	let pageTitle = ownProps.match.params.title;
 	let currentProject = projects.filter((p) => {
-		let currentPageTitle = p.title.toLowerCase().split(' ').join('-');
+		let currentpageTitle = p.title.toLowerCase().split(' ').join('-');
 
-		return currentPageTitle === pagetitle;
+		return currentpageTitle === pageTitle;
 	});
 
 	currentProject = currentProject[0];

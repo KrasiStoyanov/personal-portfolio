@@ -23,7 +23,7 @@ class BrandingAndIdentity extends Component {
 		    		<div className="row">
 		    			<div className="col-12 col-md-8 col-lg-6 pr-2 pl-2 ">
 		    				<h2 className="mb-3 text-capitalize">Branding & Identity</h2>
-		    				<p className="mb-0">Have something to say?</p>
+		    				<p className="mb-0">From a logo to a bottle label design, here I present all my branding and identity designs throughout the years.</p>
 		    			</div>
 		    		</div>
 		    	</div>
