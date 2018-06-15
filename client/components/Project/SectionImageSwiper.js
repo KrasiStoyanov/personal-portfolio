@@ -16,13 +16,14 @@ class SectionImageSwiper extends Component {
             },
         };
 
+        if (images.length <= 3) {
+            swiperParams.loop = false;
+        }
+
         if (screenWidth < 768) {
             swiperParams.slidesPerView = 1;
             swiperParams.slidesPerGroup = 1;
-        }
-
-        if (images.length <= 3) {
-            swiperParams.loop = false;
+            swiperParams.loop = true;
         }
 
         return (
