@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Swiper from 'react-id-swiper';
+import React, { Component } from "react";
+import Swiper from "react-id-swiper";
 
 class SectionImageSwiper extends Component {
     render() {
@@ -10,19 +10,24 @@ class SectionImageSwiper extends Component {
             slidesPerGroup: 3,
             loop: true,
             pagination: {
-                el: '.swiper-pagination',
+                el: ".swiper-pagination",
                 clickable: true,
-            }
-        }
+            },
+        };
 
         if (images.length <= 3) {
             swiperParams.loop = false;
         }
 
-        return(
+        return (
             <section className="section image-swiper pt-6 pt-lg-12 pb-6 pb-lg-12">
                 <Swiper {...swiperParams}>
-                    {images.map((i, index) => <img key={index} src={`public/${i}`}/>)}
+                    {images.map((i, index) => (
+                        <img
+                         key={index}
+                         src={`${i}`}
+                        />
+                    ))}
                 </Swiper>
             </section>
         );

@@ -1,71 +1,69 @@
-const path = require('path');
+const path = require("path");
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const autoprefixer = require("autoprefixer");
 
 const htmlWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: './public/index.html',
-    filename: 'index.html',
-    inject: 'body'
+    template: "./public/index.html",
+    filename: "index.html",
+    inject: "body",
 });
 
 const extractSassPluginConfig = new ExtractTextPlugin({
-    filename: './dist/css/style.css',
-    allChunks: true
+    filename: "public/css/style.css",
+    allChunks: true,
 });
 
 module.exports = {
-    entry: [
-        './client/index.js',
-        './public/sass/main.scss'
-    ],
+    entry: ["./client/index.js", "./public/sass/main.scss"],
     output: {
-        path: path.resolve('dist'),
-        filename: 'bundle.js'
+        path: path.join(__dirname, "public"),
+        filename: "bundle.js",
     },
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
     },
     module: {
-        loaders: [{
+        loaders: [
+            {
                 test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
+                loader: "babel-loader",
+                exclude: /node_modules/,
             },
             {
                 test: /\.jsx$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
+                loader: "babel-loader",
+                exclude: /node_modules/,
             },
             {
                 test: /\.scss$/,
                 use: extractSassPluginConfig.extract({
-                    use: [{
-                        loader: "css-loader",
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            plugins: () => [autoprefixer()]
-                        }
-                    }, {
-                        loader: "sass-loader",
-                        options: {
-                            sourceMap: true
-                        }
-                    }],
-                    fallback: "style-loader"
-                })
+                    use: [
+                        {
+                            loader: "css-loader",
+                        },
+                        {
+                            loader: "postcss-loader",
+                            options: {
+                                plugins: () => [autoprefixer()],
+                            },
+                        },
+                        {
+                            loader: "sass-loader",
+                            options: {
+                                sourceMap: true,
+                            },
+                        },
+                    ],
+                    fallback: "style-loader",
+                }),
             },
             {
                 test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/,
-                loader: 'url-loader?limit=100000'
-            }
-        ]
+                loader: "url-loader?limit=100000",
+            },
+        ],
     },
-    plugins: [
-        htmlWebpackPluginConfig,
-        extractSassPluginConfig
-    ]
-}
+    plugins: [htmlWebpackPluginConfig, extractSassPluginConfig],
+};

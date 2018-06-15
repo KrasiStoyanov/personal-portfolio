@@ -21,7 +21,7 @@ class FollowingProject extends Component {
                  className="card d-flex flex-row work-link">
                     <div
                      className="cover-image img-fluid"
-                     style={{ backgroundImage: `url(/public/${coverImage})` }}
+                     style={{ backgroundImage: `url(/${coverImage})` }}
                     />
                     <div className="overlay" />
                     <div className="wrapper d-flex flex-row align-self-center p-3">

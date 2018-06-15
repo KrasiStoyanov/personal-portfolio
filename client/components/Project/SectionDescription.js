@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import renderHTML from 'react-render-html';
+import React, { Component } from "react";
+import renderHTML from "react-render-html";
 
 class SectionDescription extends Component {
     render() {
@@ -9,21 +9,31 @@ class SectionDescription extends Component {
         let heading = descriptionContent.heading;
         let description = descriptionContent.description;
         let images = descriptionContent.images ? descriptionContent.images : [];
-        let doesHaveImages = images.length ? 'mb-12' : '';
-        let marginBottomImages = descriptionContent.imageMarginBottom ? descriptionContent.imageMarginBottom : 0;
-        let textAlignmentClass = descriptionContent.textAlignmentClass ? descriptionContent.textAlignmentClass : '';
+        let doesHaveImages = images.length ? "mb-12" : "";
+        let marginBottomImages = descriptionContent.imageMarginBottom
+            ? descriptionContent.imageMarginBottom
+            : 0;
+        let textAlignmentClass = descriptionContent.textAlignmentClass
+            ? descriptionContent.textAlignmentClass
+            : "";
         let colWidth = descriptionContent.colWidth ? descriptionContent.colWidth : 6;
         let colOffset = descriptionContent.colOffset ? descriptionContent.colOffset : 3;
-        let className = descriptionContent.className ? descriptionContent.className : '';
+        let className = descriptionContent.className ? descriptionContent.className : "";
 
-        return(
+        return (
             <section className={`section ${className} pt-6 pt-lg-12 pb-6 pb-lg-12`}>
                 <div className={`container ${doesHaveImages}`}>
                     <div className="row">
-                        <div className={`col-12 col-lg-${colWidth} offset-lg-${colOffset} text-center pr-sm-0 pl-sm-0`}>
-                            <small className="title text-uppercase text-primary mb-1">{title}</small>
+                        <div
+                         className={`col-12 col-lg-${colWidth} offset-lg-${colOffset} text-center pr-sm-0 pl-sm-0`}>
+                            <small className="title text-uppercase text-primary mb-1">
+                                {title}
+                            </small>
                             <h2 className="text-capitalize mb-3">{heading}</h2>
-                            <h4 className={`description font-weight-normal text-secondary ${textAlignmentClass} m-0`}>{renderHTML(description)}</h4>
+                            <h4
+                             className={`description font-weight-normal text-secondary ${textAlignmentClass} m-0`}>
+                                {renderHTML(description)}
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -34,8 +44,13 @@ class SectionDescription extends Component {
                                 marginBottomImages = 0;
                             }
                             return (
-                                <div className={`col-12 p-0 mb-${marginBottomImages}`} key={index}>
-                                    <img className="w-100" src={`public/${image}`} />
+                                <div
+                                 className={`col-12 p-0 mb-${marginBottomImages}`}
+                                 key={index}>
+                                    <img
+                                     className="w-100"
+                                     src={`${image}`}
+                                    />
                                 </div>
                             );
                         })}
