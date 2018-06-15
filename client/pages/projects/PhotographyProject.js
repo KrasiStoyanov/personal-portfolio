@@ -32,6 +32,7 @@ class PhotographyProject extends Component {
 		) : (
 			""
 		);
+		let images = project.images ? <SectionImageSwiper images={project.images} /> : "";
 		let followingProjectsSection =
 			followingProjects.length > 0 ? (
 				<SectionFollowingProject projects={followingProjects} />
@@ -46,6 +47,7 @@ class PhotographyProject extends Component {
 				 id="project-content"
 				 className="project-content">
 					{overview}
+					{images}
 					{followingProjectsSection}
 				</div>
 			</div>

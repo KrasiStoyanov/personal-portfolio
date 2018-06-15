@@ -46,7 +46,7 @@ export default function() {
 			title: "Photography",
 			dataFilter: 6,
 			colMd: 4,
-			imageSrc: "./images/photography/blossom.JPG",
+			imageSrc: "./images/photography/botanic/cover-image.JPG",
 		},
 	];
 }
