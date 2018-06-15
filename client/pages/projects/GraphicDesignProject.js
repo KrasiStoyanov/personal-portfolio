@@ -32,6 +32,16 @@ class GraphicDesignproject extends Component {
 		) : (
 			""
 		);
+		let purpose = project.purpose ? (
+			<SectionDescription descriptionContent={project.purpose} />
+		) : (
+			""
+		);
+		let approach = project.approach ? (
+			<SectionApproach approachContent={project.approach} />
+		) : (
+			""
+		);
 		let images = project.images ? <SectionImageSwiper images={project.images} /> : "";
 		let followingProjectsSection =
 			followingProjects.length > 0 ? (
@@ -47,6 +57,8 @@ class GraphicDesignproject extends Component {
 				 id="project-content"
 				 className="project-content">
 					{overview}
+					{purpose}
+					{approach}
 					{images}
 					{followingProjectsSection}
 				</div>
