@@ -13,7 +13,7 @@ class About extends Component {
 				<div id="about" className="container pr-sm-0 pl-sm-0 pt-12 pb-12">
 		    		<div className="row align-items-center">
 		    			<section className="section col-12 col-lg-6">
-		    				<img className="w-100" src="public/images/about.jpg" alt="About iamge"/>
+		    				<img className="w-100" src="images/about.jpg" alt="About iamge"/>
 		    			</section>
 		    			<section className="section col-12 col-lg-6 pl-5">
                             <small className="title text-uppercase text-primary mb-1">Krasi Stoyanov</small>
