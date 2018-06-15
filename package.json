@@ -20,6 +20,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.10",
     "react-dom": "^16.0.0",
     "react-id-swiper": "^1.6.4",
+    "react-iframe": "^1.1.0",
     "react-redux": "^5.0.6",
     "react-render-html": "^0.6.0",
     "react-router": "^4.2.0",
