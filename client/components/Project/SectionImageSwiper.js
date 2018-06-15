@@ -4,6 +4,7 @@ import Swiper from "react-id-swiper";
 class SectionImageSwiper extends Component {
     render() {
         let images = this.props.images;
+        let screenWidth = window.screen.availWidth;
         const swiperParams = {
             slidesPerView: 3,
             spaceBetween: 30,
@@ -14,6 +15,11 @@ class SectionImageSwiper extends Component {
                 clickable: true,
             },
         };
+
+        if (screenWidth < 768) {
+            swiperParams.slidesPerView = 1;
+            swiperParams.slidesPerGroup = 1;
+        }
 
         if (images.length <= 3) {
             swiperParams.loop = false;

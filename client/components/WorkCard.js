@@ -12,7 +12,7 @@ class WorkCard extends Component {
 			 className="card d-flex flex-row work-link">
 				<div
 				 className="cover-image img-fluid"
-				 style={{ backgroundImage: `url(../public/${project.imageSrc})` }}
+				 style={{ backgroundImage: `url(/${project.imageSrc})` }}
 				/>
 				<div className="overlay" />
 				<div className="wrapper d-flex flex-row align-self-end p-3">
