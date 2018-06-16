@@ -45,11 +45,27 @@ export default function () {
 			"category": 3,
 			"overview": {
 				"title": "Overview",
-				"heading": "The infographic",
-				"description": "Wonder what the progress of our world looks like? Maybe interested in aircrafts and space? You are lucky, because here I present my infographic about spacecrafts based on their characteristics, years they have been created and shape.",
+				"heading": "The project",
+				"description": "A nature-based magazine reveals its covers by showings us a fascinating amount of magnificent forests. Natured is the newest, minimalistic, nature magazine which includes thousands of hundrets of photos of pure Mother Nature in its best.",
 				"images": [
 					"./images/graphic-design/natured/cover-image.png",
 				]
+			},
+			purpose: {
+				title: "how the project was received",
+				heading: "The purpose",
+				description:
+					"The task of designing a magazine cover was handed to me with the criteria of having to combine imagery with text. Nature has always been my inspiration. That is why I wanted to incude it in at least one of my project assignments.",
+			},
+			approach: {
+				title: "how the project was approached",
+				heading: "The approach",
+				description:
+					"Every magazine cover reveals parts of its content by sharing some intriguing titles and descriptions. Not only that, but imagery is a must. So from trying out different layouts, I finally managed to choose one that suits my idea best. Not only that, but the best part of it is the astonishing blending of the magazine’s name with the imagery.",
+				images: [
+					"./images/graphic-design/natured/sketch-1.jpg",
+					"./images/graphic-design/natured/sketch-2.jpg",
+				],
 			},
 			"images": [
 				"./images/graphic-design/natured/showcase-1.png",
