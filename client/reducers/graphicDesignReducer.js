@@ -34,6 +34,22 @@ export default function () {
 					"./images/graphic-design/spacecrafts/infographic.png",
 				]
 			},
+			purpose: {
+				title: "how the project was received",
+				heading: "The purpose",
+				description:
+					"A very interesting task was given to me - design an infographic based on a certain dataset. I looked through it and decided how I would like to present it - chronologically show all the spacecrafts in the dataset using illustrations of them and icons for the statistics.",
+			},
+			approach: {
+				title: "how the project was approached",
+				heading: "The approach",
+				description:
+					"It took a while to figure out the exact layout I pursued. After writing everything that needed to be present in the infographic, I started sketching some layout suggestions. I found a suitable one and experimented with the way of showing each one spacecraft and its statistics. I decided to use icons for the stats and illustrations for the spacecrafts.",
+				images: [
+					"./images/graphic-design/spacecrafts/sketch-1.png",
+					"./images/graphic-design/spacecrafts/sketch-2.png",
+				],
+			},
 			"colMd": 4
 		},
 		{
