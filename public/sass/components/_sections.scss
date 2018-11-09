@@ -38,6 +38,18 @@
 				margin-bottom: 0;
 			}
 		}
+		
+		/* QUICK FIX - NEEDS TO BE CHANGED */
+		@media (max-width: 768px) {
+			.row {
+				height: auto;
+			}
+
+			.image-wrapper,
+			.quote-wrapper {
+				height: 500px !important;
+			}
+		}
 	}
 
 	&.approach {
