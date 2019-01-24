@@ -14,6 +14,7 @@ export default function () {
 				"images": [
 					"./images/graphic-design/personas/persona-1.png",
 					"./images/graphic-design/personas/persona-2.png",
+					"./images/graphic-design/personas/persona-3.png",
 				],
 				"imageMarginBottom": 3
 			},
