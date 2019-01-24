@@ -5,7 +5,7 @@ export default function () {
 			"url": "/gaming/drunkenstein",
 			"title": "Drunkenstein",
 			"date": "15 December, 2018",
-			"imageSrc": "./images/gaming/drunkenstein/cover-image.png",
+			"imageSrc": "./images/gaming/drunkenstein/cover-image.PNG",
 			"category": 3,
 			"overview": {
 				"title": "Overview",

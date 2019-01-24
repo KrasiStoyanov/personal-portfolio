@@ -6,7 +6,7 @@ export default function() {
 			title: "Gaming",
 			dataFilter: 1,
 			colMd: 4,
-			imageSrc: "./images/gaming/drunkenstein/cover-image.png",
+			imageSrc: "./images/gaming/drunkenstein/cover-image.PNG",
 		},
 		{
 			url: "/web-design",
