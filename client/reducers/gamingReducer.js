@@ -15,6 +15,7 @@ export default function () {
 					"./images/gaming/drunkenstein/image-1.png",
 					"./images/gaming/drunkenstein/image-2.png",
 					"./images/gaming/drunkenstein/image-3.png",
+					"./images/gaming/drunkenstein/image-4.png",
 				],
 				"imageMarginBottom": 3
 			},
