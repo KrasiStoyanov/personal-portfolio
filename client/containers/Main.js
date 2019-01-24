@@ -9,6 +9,8 @@ import ArtAndIllustration from '../pages/ArtAndIllustration';
 import ArtAndIllustrationProject from '../pages/projects/ArtAndIllustrationProject';
 import BrandingAndIdentity from '../pages/BrandingAndIdentity';
 import BrandingAndIdentityProject from '../pages/projects/BrandingAndIdentityProject';
+import Gaming from '../pages/Gaming';
+import GamingProject from '../pages/projects/GamingProject';
 import GraphicDesign from '../pages/GraphicDesign';
 import GraphicDesignProject from '../pages/projects/GraphicDesignProject';
 import Literature from '../pages/Literature';
@@ -34,6 +36,8 @@ class Main extends Component {
 					<Route path='/art-and-illustration/:title' component={ArtAndIllustrationProject} />
 					<Route exact path='/branding-and-identity' component={BrandingAndIdentity} />
 					<Route path='/branding-and-identity/:title' component={BrandingAndIdentityProject} />
+					<Route exact path='/gaming' component={Gaming} />
+					<Route path='/gaming/:title' component={GamingProject} />
 					<Route exact path='/graphic-design' component={GraphicDesign} />
 					<Route path='/graphic-design/:title' component={GraphicDesignProject} />
 					<Route exact path='/literature' component={Literature}/>

@@ -10,7 +10,7 @@ import SectionColors from "../../components/Project/SectionColors";
 import SectionFollowingProject from "../../components/Project/SectionFollowingProject";
 import SectionImageSwiper from "../../components/Project/SectionImageSwiper";
 
-class GraphicDesignProject extends Component {
+class GamingPorject extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -68,7 +68,7 @@ class GraphicDesignProject extends Component {
 }
 
 function mapStateToProps(state, ownProps, ...args) {
-	let projects = state.graphicDesign;
+	let projects = state.gaming;
 	let projectsLength = projects.length;
 
 	let pageTitle = ownProps.match.params.title;
@@ -131,4 +131,4 @@ function mapStateToProps(state, ownProps, ...args) {
 	};
 }
 
-export default connect(mapStateToProps)(GraphicDesignProject);
+export default connect(mapStateToProps)(GamingPorject);
