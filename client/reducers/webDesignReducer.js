@@ -27,8 +27,8 @@ export default function () {
 				"heading": "The approach",
 				"description": "The process was slow mostly because of experimentations using animations. Besides that, the design process went smoothly, almost without unwanted corrections.",
 				"images": [
-					"./images/web-design/fullmetal-alchemist/approach-1.jpeg",
-					"./images/web-design/fullmetal-alchemist/approach-2.jpeg"
+					"./images/web-design/firework-violations/approach-1.jpeg",
+					"./images/web-design/firework-violations/approach-2.jpeg"
 				]
 			},
 			"website": "https://firework-violations.000webhostapp.com/",
