@@ -19,6 +19,7 @@ export default function () {
 				],
 				"imageMarginBottom": 3
 			},
+			"website": "https://github.com/KrasiStoyanov/Drunkenstein",
 			"colMd": 4
 		},
 	]

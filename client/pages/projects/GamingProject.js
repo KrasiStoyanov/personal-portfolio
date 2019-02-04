@@ -49,6 +49,16 @@ class GamingPorject extends Component {
 			) : (
 				""
 			);
+		let website = project.website ? (
+			<a
+				href={project.website}
+				target="_blank"
+				className="btn btn-primary btn-circle btn-lg position-fixed">
+				<i className="icon-link" />
+			</a>
+		) : (
+			""
+		);
 
 		return (
 			<div id="project">
@@ -61,6 +71,7 @@ class GamingPorject extends Component {
 					{approach}
 					{images}
 					{followingProjectsSection}
+					{website}
 				</div>
 			</div>
 		);
