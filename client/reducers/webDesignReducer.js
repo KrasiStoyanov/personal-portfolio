@@ -2,6 +2,40 @@ export default function () {
 	return [
 		{
 			id: 0,
+			"url": "/web-design/firework-violations",
+			"title": "Firework Violations",
+			"date": "9 October, 2017",
+			"imageSrc": "./images/web-design/firework-violations/cover-image.png",
+			"category": 1,
+			"overview": {
+				"title": "what it is about",
+				"heading": "The project",
+				"description": "There has been a considerable amount of youth violations within The Netherlands. They are violations of all sorts, but the one that the product is focusing on are <span className='text-primary'>firework violations</span>.",
+				"images": [
+					"./images/web-design/firework-violations/cover-image.png",
+					"./images/web-design/firework-violations/part-2.png",
+					"./images/web-design/firework-violations/part-3.png",
+				]
+			},
+			"purpose": {
+				"title": "how the project was received",
+				"heading": "The purpose",
+				"description": "Having to illustrate one or several of those violations, I decided to go with fireworks. It sparked an idea in my mind that I intended to translate into visuals and later on in code."
+			},
+			"approach": {
+				"title": "how the project was approached",
+				"heading": "The approach",
+				"description": "The process was slow mostly because of experimentations using animations. Besides that, the design process went smoothly, almost without unwanted corrections.",
+				"images": [
+					"./images/web-design/fullmetal-alchemist/approach-1.jpeg",
+					"./images/web-design/fullmetal-alchemist/approach-2.jpeg"
+				]
+			},
+			"website": "https://firework-violations.000webhostapp.com/",
+			"colMd": 4
+		},
+		{
+			id: 1,
 			"url": "/web-design/fullmetal-alchemist",
 			"title": "Fullmetal Alchemist",
 			"date": "9 October, 2017",
@@ -40,7 +74,7 @@ export default function () {
 			"colMd": 4
 		},
 		{
-			id: 1,
+			id: 2,
 			"url": "/web-design/quizco",
 			"title": "Quizco",
 			"date": "6 January, 2018",
@@ -62,7 +96,7 @@ export default function () {
 			"colMd": 4
 		},
 		{
-			id: 2,
+			id: 3,
 			"url": "/web-design/hactex",
 			"title": "Hactex",
 			"date": "12 November, 2016",
