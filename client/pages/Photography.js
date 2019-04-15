@@ -23,7 +23,7 @@ class Photography extends Component {
 		    		<div className="row">
 		    			<div className="col-12 col-md-8 col-lg-6 pr-2 pl-2 ">
 		    				<h2 className="mb-3 text-capitalize">Photography</h2>
-		    				<p className="mb-0">Have something to say?</p>
+		    				<p className="mb-0">A newbie in photography practicing in my free time.</p>
 		    			</div>
 		    		</div>
 		    	</div>

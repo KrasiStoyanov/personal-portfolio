@@ -23,7 +23,7 @@ class GraphicDesign extends Component {
 		    		<div className="row">
 		    			<div className="col-12 col-md-8 col-lg-6 pr-2 pl-2 ">
 		    				<h2 className="mb-3 text-capitalize">Graphic Design</h2>
-		    				<p className="mb-0">Mainly school work however, it is considered to be one of the most successful ones for the whole specialty for a first-year student.</p>
+		    				<p className="mb-0">Mainly university work however, it is considered to be one of the most successful ones for the whole specialty for a first-year student.</p>
 		    			</div>
 		    		</div>
 		    	</div>

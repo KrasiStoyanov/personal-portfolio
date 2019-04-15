@@ -23,7 +23,7 @@ class Gaming extends Component {
 		    		<div className="row">
 		    			<div className="col-12 col-md-8 col-lg-6 pr-2 pl-2 ">
 		    				<h2 className="mb-3 text-capitalize">Gaming</h2>
-		    				<p className="mb-0">This is the newest section in my portfolio. It shows my progress throughout the years in Hanzehogeschool Groningen, Netherlands.</p>
+		    				<p className="mb-0">Here I present all my of my greatest game achievements. I have been working either on Game Development/Game Art/Game Design or on all of the 3 departments.</p>
 		    			</div>
 		    		</div>
 		    	</div>

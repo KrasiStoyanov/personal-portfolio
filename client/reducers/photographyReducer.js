@@ -9,7 +9,7 @@ export default function () {
 			"overview": {
 				"title": "Overview",
 				"heading": "My love",
-				"description": "My one and only <span className='text-primary'>Rita</span>. She has been next to me for the past 9 years and is still so energetic and happy. Always loayl and willing to distract you from your work.",
+				"description": "My one and only <span className='text-primary'>Rita</span>. She has been next to me for the past 10 years and is still so energetic and happy. Always loayl and willing to distract you from your work.",
 				"images": [
 					"./images/photography/rita/cover-image.jpg",
 					"./images/photography/rita/image-1.jpg",
