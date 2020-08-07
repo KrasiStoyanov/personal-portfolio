@@ -13,15 +13,15 @@ class About extends Component {
 				<div id="about" className="container pr-sm-0 pl-sm-0 pt-12 pb-12">
 		    		<div className="row align-items-center">
 		    			<section className="section col-12 col-lg-6">
-		    				<img className="w-100" src="images/about.jpg" alt="About iamge"/>
+		    				<img className="w-100" src="images/about.jpeg" alt="About iamge"/>
 		    			</section>
 		    			<section className="section col-12 col-lg-6 pl-5">
                             <small className="title text-uppercase text-primary mb-1">Krasi Stoyanov</small>
 		    				<h2 className="color-black mb-3 text-capitalize">UI Designer and Front End Developer</h2>
-		    				<p className="mb-0">A 20-year-old prodigy, combining Design and Front End skills, volunteering in different causes and a great team-player, who will never leave you on your own. Extremely diligent, life-time learner, with the intention to become a Game Development grand master.
+		    				<p className="mb-0">A 21-year-old prodigy, combining design and front-end skills, volunteering in different causes and a great team player, who will never leave you on your own. Extremely diligent, lifetime learner, to become a Front End grandmaster and an ultimate Game Developer.
 		    				<br/>
 		    				<br/>
-		    				Currently a 2nd year Game Design & Development student <a href="https://www.hanze.nl/nld" target="_blank">@Hanzehogeschool</a> Groningen.</p>
+		    				Currently in 4th (graduation) year as a Game Design & Development student <a href="https://www.hanze.nl/nld" target="_blank">@Hanzehogeschool</a> Groningen.</p>
 		    			</section>
 		    		</div>
 		    	</div>
